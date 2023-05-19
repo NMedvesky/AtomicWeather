@@ -1,4 +1,5 @@
 # AtomicWeather
+![alt text](https://github.com/NMedvesky/AtomicWeather/blob/[branch]/Atomictoad.png?raw=true)
 Gets the weather in the US via the weather.gov api
 
 Download the WeatherAppV1.zip to get started.
