@@ -33,7 +33,7 @@ class App(customtkinter.CTk):
 		self.frame_center = customtkinter.CTkFrame(master=self,
 												   width=self.WIDTH*0.9,
 												   height=self.HEIGHT*0.1,
-												   fg_color="default_theme",
+												   #fg_color="default_theme",
 												   corner_radius=30)
 		self.frame_center.grid(padx=self.WIDTH*0.05, pady=self.HEIGHT*0.03)
 		self.city = customtkinter.CTkLabel(master=self.frame_center,
@@ -41,7 +41,7 @@ class App(customtkinter.CTk):
 												  height=self.HEIGHT*0.05,
 												  fg_color="#404040",
 												  text=newForecast.forecast[0]["city"],
-												  text_font=("default_theme", 25))
+												  font=customtkinter.CTkFont(size=25))
 		self.city.grid(padx=self.WIDTH*0.05, pady=self.HEIGHT*0.02)
 
 		index = 0
@@ -62,9 +62,8 @@ class App(customtkinter.CTk):
 												  	  height=self.HEIGHT*0.15,
 												  	  fg_color="#404040",
 												  	  text=forecastText,
-												  	  text_font=("default_theme", 20))
+												  	  font=customtkinter.CTkFont(size=20))
 			self.generalInfo.grid(padx=self.WIDTH*0.01, pady=self.HEIGHT*0.01)
-			self.generalInfo.apply_font_scaling("default_theme")
 
 			index += 3
 
