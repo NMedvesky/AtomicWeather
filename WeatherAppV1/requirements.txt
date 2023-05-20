@@ -3,4 +3,3 @@ customtkinter
 datetime
 requests
 geocoder
-json
